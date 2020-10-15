@@ -1,21 +1,21 @@
-# ECE444-F2020-Lab3
+# ECE444-F2020-Lab4
 Author: Shadman Siddiqui
 
 This repo is a clone of https://github.com/miguelgrinberg/flasky
 
-## Activity 1
-![Activity 1 picture](img/Activity_1.png)
----
-## Activity 2
-### Screenshot 1
-![Activity 2 picture 1](img/Activity_2_1.png)
----
-### Screenshot 2
-![Activity 2 picture 2](img/Activity_2_2.png)
----
-### Screenshot 3
-![Activity 2 picture 3](img/Activity_2_3.png)
----
-### Screenshot 4
-![Activity 2 picture 4](img/Activity_2_4.png)
----
+## How to run this app in a Docker container
+
+1. Install Docker on your machine if you don't already have it: https://docs.docker.com/get-docker/
+
+2. Build a Docker image for the app by running the following command in the root directory of the repository: `docker build -t flask-sample:latest .`
+   The `docker build` command looks for a `Dockerfile` in the working directory for instructions on how to build the image. A `Dockerfile` to build the image for this app is in the root directory of this repository.
+   
+   If the image is built successfully, you should be able to see an image with the name `flask-sample` when you run the command `docker images`:
+   
+3. Launch a containerized instance of the image you built by running the command `docker run -d -p 5000:5000 flask-sample`. Once the container has been started, the command will output an ID of the new container:
+
+4. Check the status of the container with the command `docker ps`. If there was no error, you should see information about the new container with its status showing as "Up":
+
+
+5. Enter the url `0.0.0.0:5000/` in your browser. You should see the app:
+
