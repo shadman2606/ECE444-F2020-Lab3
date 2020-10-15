@@ -12,10 +12,20 @@ This repo is a clone of https://github.com/miguelgrinberg/flasky
    
    If the image is built successfully, you should be able to see an image with the name `flask-sample` when you run the command `docker images`:
    
-3. Launch a containerized instance of the image you built by running the command `docker run -d -p 5000:5000 flask-sample`. Once the container has been started, the command will output an ID of the new container:
+   ![Output of docker images](img/docker_images.png)
+   
+3. Launch a containerized instance of the image you built by running the command `docker run -d -p 5000:5000 flask-sample`. Once the container has been started, the command will output an ID for the new container:
 
-4. Check the status of the container with the command `docker ps`. If there was no error, you should see information about the new container with its status showing as "Up":
+   ![Output of docker run](img/docker_run.png)
+
+
+4. Check the status of the container with the command `docker ps`. If there was no error, you should see information about the new container along with its status showing "Up":
+
+   ![Output of docker ps](img/docker_ps.png)
 
 
 5. Enter the url `0.0.0.0:5000/` in your browser. You should see the app:
 
+   ![App opened in browser](img/browser.png)
+   
+   Congratulations!
