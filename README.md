@@ -32,4 +32,20 @@ This repo is a clone of https://github.com/miguelgrinberg/flasky
 
    ![App opened in browser](img/browser.png)
    
+
+   
    Congratulations!
+
+## Docker containers vs Virtual Machines
+### Containers
+- run on Linux OS
+- share resources of host OS
+- each run as a single process on OS
+- isolated from each other by having their own file systems
+- lightweight
+
+### Virtual Machines
+- run on a hypervisor
+- each instance runs a full-blown OS
+- share infrastructure through virtual access managed by hypervisor
+- lot of overhead
